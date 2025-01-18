@@ -1,0 +1,171 @@
+
+.container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  height: 100%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333; 
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.hexagon {
+  width: 40px;
+  height: 23px;
+  background-color: #f5c518;
+  position: relative;
+  margin-right: 10px;
+}
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.hexagon::before {
+  border-bottom: 12px solid #f5c518;
+  top: -12px;
+}
+
+.hexagon::after {
+  border-top: 12px solid #f5c518;
+  bottom: -12px;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+}
+
+
+.formContainer {
+  margin-bottom: 50px;
+}
+
+.topForm {
+  margin-bottom: 40px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.input {
+  /* width: 400px; */
+  padding: 10px;
+  border: 1px solid #444444;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  outline: none;
+}
+
+.input:focus{
+  border: 1px solid #3a9ad9;
+}
+
+.input::placeholder {
+  color: #777777;
+}
+
+.submitInput {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3a9ad9;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submitInput:hover {
+  background-color: #338cc8;
+}
+
+
+.left {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.right {
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #444444;
+  border-radius: 5px;
+  background-color: #252525;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #444444;
+  padding: 10px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.table td {
+  background-color: #2a2a2a;
+  color: #cccccc;
+}
+
+.infoButton {
+  padding: 5px 10px;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3a9ad9;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.infoButton:hover {
+  background-color: #338cc8;
+}
+
+.hideButton {
+  background-color: #f03e3e;
+}
+
+.hideButton:hover {
+  background-color: #d02b2b;
+}
+
+
+@media(min-width:1200px){
+  .left,.right{
+    height: 260px;
+  }
+}
